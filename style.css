@@ -1,0 +1,197 @@
+
+/*****************************************
+Table Of Contents:
+
+01. BASIC CSS Style
+02. Navigation Bar 
+03. Progress Bar
+04. Slacked  Charts
+******************************************/
+
+
+/******************************/
+/*    01. BASIC CSS Style     */
+/******************************/
+
+.my{
+   box-shadow: 0px 0px 10px 16px ;
+   border-radius: 30px;
+}
+
+
+
+body {
+  font-family: Open Sans;
+  
+}
+
+p{
+  font-size: 10px;
+}
+
+
+/******************************/
+/*    02. Navigation Bar      */
+/******************************/
+
+.nav,  .nav__list {
+    background: white;
+    box-shadow: 0px 0px 10px var(--clr-gray200);
+    padding: 1rem 0;
+    width: 5rem;
+    height: 86vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav__item {
+    list-style: none;
+    font-size: 0.7rem;
+    text-align: center;
+    transition: all 200ms ease-in;
+
+}
+
+
+@media screen and (max-width: 550px) {
+  .nav, .nav__list, .nav__item {
+      flex-direction: row;
+      width: 100vw;
+      height: 3rem;
+      bottom: 0;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 1rem;
+      background-color: white;
+      box-shadow: 0px 0px 10px 16px var(--clr-gray200);
+    }
+  }
+
+
+
+
+/******************************/
+/*    Buttons                 */
+/******************************/
+
+.btn1{
+  background-color: #4d4dff;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+
+
+}
+
+.btn{
+  background-color: #4d4dff;
+  width: 200px;
+  border-radius: 10px;
+}
+
+
+
+
+/******************************/
+/*    03. Progress Bar     */
+/******************************/
+
+@keyframes growProgressBar {
+  0%, 33% { --pgPercentage: 0; }
+  100% { --pgPercentage: var(--value); }
+}
+
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+div[role="progressbar"] {
+  --size: 3.2rem;
+  --fg: #00cc99;
+  --bg: #def;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 2s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: 
+    radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+    ;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+}
+
+
+
+
+/******************************/
+/*      04.  Slacked  Charts    */
+/******************************/
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 240px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: grey;
+ 
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background: #04AA6D;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 24px;
+  border: 0;
+  background:#04AA6D;
+  cursor: pointer;
+}
+
+
+/******************************/
+/*    Hr tags                */
+/******************************/
+
+hr{
+  border: 1px solid #6918b4;
+}
+
+
+.vl {
+  border-left: 2px solid #6918b4;
+  height: 100px;
+}

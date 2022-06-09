@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mockup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!---------Font Awesome style------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+   <!---------Font Awesome Kit------------->
+  <script src="https://kit.fontawesome.com/92c23805dd.js" crossorigin="anonymous"></script>
+
+
+
+<!---------stacked chart------------->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+<!---------CSS------------->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+  <!––------------------ Navbiagtion Bar ---------------------------––>
+
+  <div class="my container-fluid">
+    <div class="row">
+      <div class="col-1" >
+
+        <navbar class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#">
+      <i class="fa fa-home text-white pt-1"   style="width: 24px; height: 24px; background-color: #4d4dff; border-radius: 3px; font-size:14px;"></i>
+
+        
+        </a>
+      </li>
+
+      <li class="nav__item">
+        <a href="#">
+        <i class="fa fa-newspaper-o text-dark" style="font-size:24px"></i>
+         
+        </a>
+      </li>
+
+      <li class="nav__item">
+        <a href="#">
+          <img  width="40" src="square-list.png" alt="">
+        
+         
+        </a>
+      </li>
+
+      <li class="nav__item">
+        <a href="#">
+          <i class="fa fa-user text-dark" style="font-size:24px"></i>
+         
+        </a>
+      </li>
+
+      <li class="nav__item">
+        <a href="#">
+         <i class="fa fa-search text-dark" style="font-size:24px"></i>
+       
+        </a>
+      </li>
+    </ul>
+  </navbar>
+ </div>
+
+
+
+
+<!––------------------SECTION 01 Welcome Page ---------------------------––>
+
+      <div class="col-sm" style="background-color:white;">
+
+        <div class="container mt-3">
+  
+  <div class="media  p-3">
+    <img src="roof.jpg" alt="John Doe" class="mr-3  rounded-circle" height="40px" style="width:52px;">
+    <div class="media-body">
+      <h4><strong>Hi Mike,</strong></h4>
+      <p>Welcome back.</p>   
+    <div>
+
+        <h5>Today</h5>
+        <h3><strong>$19,892</strong></h3>
+        <p class="text-muted">Account Balance</p>
+
+
+        <div class="row">
+      <div class=" col-12 " >
+        <h4><strong>$4,000</strong></h4>
+        <p class="text-muted">Year-to-Date contributions</p>
+      </div>
+
+      <div class=" col-12 " >
+        <h4><strong>$1,892</strong></h4>
+        <p class="text-muted">Total Interest</p>
+      </div>
+
+
+      <button  type="button" class="btn1 btn-info mb-5">I want to <i class='fas fa-caret-down' style='font-size:16px'></i></button>
+
+
+      
+      <h6 class="col-12 mb-3"><strong>Recent Transactions</strong></h6>
+      
+
+      <p class="col-12 text-muted">2020-08-07</p>
+      <p  class="col-12"><strong>Withdrawal trasfer to bank-XXX11</strong></p>
+      <br>
+
+      <p class=" col-12 text-muted">2020-07-21</p>
+      <p class="col-12"><strong>Withdrawal trasfer to bank-XXX11</strong></p>
+      <br>
+
+      <p class=" col-12 text-muted">2020-07-16</p>
+      <p class="col-12"><strong>Withdrawal trasfer to bank-XXX11</strong></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+
+
+<!––------------------SECTION 02 Chart & Circular Progress Bar  ---------------------------––>
+
+      <div class="col-sm" >
+
+        <h5 class="mt-4" style="color:#4d4dff;"><strong>Retirement Income</strong></h5>
+        <h3><strong>Staring Year 2056</strong></h3>
+
+        <br>
+
+
+<div class="container-fluid">
+  
+  <div class="row">
+    <div class="col-sm-4" >
+      <h5><strong>$300,000</strong></h5>
+      <p>My Goal</p>
+      <hr>
+      
+
+    </div>
+    <div class="col-sm-4" >
+      <h5><strong>59%</strong></h5>
+      <p>Goal Achieved</p>
+      <hr>
+      
+    </div>
+
+
+    <div class="col-sm-4" >
+      <h5><strong>$300</strong></h5>
+      <p><small>Est. Monthly Income</small></p>
+      <hr>
+      
+    </div>
+  </div>
+</div>
+
+<br>
+
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+
+<br>
+
+<h6 class="mt-5"><strong>How do I compare to my peers?</strong></h6>
+<p>These numbers repersents current goal achievement </p>
+
+<br>
+
+
+<div class="container">
+      
+  <div class="row">
+    <div class="col-sm-6" >
+
+   <p><strong>Age:</strong> <select name="course"> 
+    <option value="Under 30"> Under 30  </option>
+    <option value="Under 40"> Under 40 </option>
+    <option value="Under 50"> Under 50 </option>
+    <option value="Under 55"> Under 55 </option>
+       </select>
+  </p>
+
+  <p><strong>Salary:</strong> <select name="course"> 
+    <option value="K"> K 20-K 30  </option>
+    <option value="K"> K 30-K 40 </option>
+    <option value="K"> K 40-K 50 </option>
+    <option value="K"> K 50-K 60 </option>
+       </select>
+  </p> 
+
+  <p><strong>Gender:</strong> <select name="course"> 
+    <option value="Male"> Male  </option>
+    <option value="FeMale"> Female </option>
+    <option value="Intersex"> Intersex </option>
+    
+       </select>
+  </p>  
+
+</div>
+
+    <div class="col-sm-6" >
+
+      <table>
+
+      <tr> 
+
+        <td>
+      <div role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="--value:78"></div>  <p align="center" class="mt-2">Average</p>
+       </td>
+
+        <td>
+          <div role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="--value:95"></div> <p align="center" class="mt-2">Top</p>
+        </td>
+
+        <td>
+            <div role="progressbar" aria-valuenow="59" aria-valuemin="0" aria-valuemax="100" style="--value:59"></div> <p align="center" class="mt-2">Me</p>
+          </td>
+
+      </tr>
+
+  </table>
+    
+    </div>
+  </div>
+</div>
+</div>
+<br>
+
+
+<!––------------------SECTION 03 Retirement Strategy and Updation  ---------------------------––>
+
+      <div class="col-sm" >
+
+        <h5 class="mt-4 mb-5"><strong>Retirement Strategy</strong></h5>
+
+
+        <h6><strong>Employee Contribution</strong></h6>
+      <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="12"  class="slider" id="defaultRange"> <label for="defaultRange"><strong> <span id="demo"></span>%</strong></label>
+
+</div> 
+
+
+<h6 class="mt-2"><strong>Retirement Age</strong></h6>
+<div class="slidecontainer1">
+  <input type="range" min="1" max="100" value="65" class="slider" id="myRange">
+   <label for="myRange"><strong> <span id="demo1"></span>%</strong></label>
+  
+</div> 
+
+<table class="table table-borderless">
+    <thead>
+      <tr>
+        <th>Employer Contributions</th>
+        <th>8.4%</th>
+       
+      </tr>
+
+       <tr>
+        <th>Interest Rate</th>
+        <th>5%</th>
+       
+      </tr>
+
+
+    </thead>
+</table>
+
+   <div align="center " class="mb-4">
+     <button  type="button" class="btn btn-info mb-4">Update</button> 
+
+<h6 style='color:#4d4dff;'>View Help Docs <i class='fas fa-angle-right' style='color:#4d4dff; font-size:16px'></i></h6>
+     
+   </div>
+
+
+<div class="vl mb-4">
+
+  <div class="ml-3">
+    <h6>Are you considering a <br> <strong>Housing Advance?</strong></h6>
+  <p>Limited time reduced interest</p> 
+  
+  <p style='color:#4d4dff;'>Learn More <i class='fas fa-angle-right' style='color:#4d4dff; font-size:10px'></i></p>
+  
+    
+    </div>
+  </div>
+</div>
+</div>
+    
+<br> <br> 
+
+
+<!––------------------JavaScript---------------------------––>
+
+<script type="text/javascript" src="script.js"></script>
+
+
+</body>
+</html>
